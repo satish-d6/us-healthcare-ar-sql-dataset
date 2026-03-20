@@ -30,19 +30,19 @@ This project includes a relational schema (claims, lines, denials, payments, fol
 
 📁 Repository Structure
     
-us-healthcare-ar-sql-dataset/
-│
-├── README.md
-├── sql/
-│   ├── schema.sql             # Tables + constraints + indexes (MySQL)
-│   ├── sample-data.sql        # Synthetic, realistic test data
-│   ├── practice-queries.sql   # Copy-ready queries from this README
-│
-├── learning-plan/
-│   ├── 7-day-plan.md          # Beginner → Intermediate in 7 days
-│
-└── screenshots/
-    └── dbfiddle-screenshot.png
+us-healthcare-ar-sql-dataset/  
+│  
+├── README.md  
+├── sql/  
+│   ├── schema.sql             # Tables + constraints + indexes (MySQL)  
+│   ├── sample-data.sql        # Synthetic, realistic test data  
+│   ├── practice-queries.sql   # Copy-ready queries from this README  
+│  
+├── learning-plan/  
+│   ├── 7-day-plan.md          # Beginner → Intermediate in 7 days  
+│  
+└── screenshots/  
+    └── dbfiddle-screenshot.png  
 
 
 🩺 What This Simulates (Real AR Use-Cases)
