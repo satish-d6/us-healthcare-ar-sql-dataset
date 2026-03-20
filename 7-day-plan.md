@@ -26,7 +26,7 @@ UNION ALL SELECT 'denials', COUNT(*) FROM denials
 UNION ALL SELECT 'follow_ups', COUNT(*) FROM follow_ups;
 
 
-**### Core queries**
+```### Core queries
 
 -- Inspect recent claims
 SELECT claim_id, service_date, submission_date, claim_amount, claim_status
