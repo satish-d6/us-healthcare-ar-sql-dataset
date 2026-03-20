@@ -41,7 +41,7 @@ us-healthcare-ar-sql-dataset/
 ├── learning-plan/  
 │   ├── 7-day-plan.md          # Beginner → Intermediate in 7 days  
 │  
-└── screenshots/      
+└── screenshots/  
     └── dbfiddle-screenshot.png  
 
 
