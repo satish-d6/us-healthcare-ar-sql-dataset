@@ -1,6 +1,13 @@
 
  7-Day, 2-Hours/Day SQL Learning Plan (US Healthcare AR)
 
+- **Run instantly on DB Fiddle (MySQL) (https://www.db-fiddle.com/):**
+  1. Paste `sql/schema.sql` in Schema SQL window
+  2. Paste `sql/sample-data.sql` in Schema SQL window
+  3. Run queries from `sql/practice-queries.sql` in Query SQL window
+
+     ------**make sure to use MySQL v8**
+     
 > **Stack:** MySQL 8 • Schema: `sql/schema.sql` • Data: `sql/sample-data.sql`
 >
 > Each day includes: learning goals, warm-up checks, and **runnable queries** that build from beginner → intermediate using the AR dataset (claims, lines, payments, denials, follow_ups, payers, patients, providers).
