@@ -6,7 +6,7 @@
   2. Paste `sql/sample-data.sql` in Schema SQL window
   3. Run queries from `sql/practice-queries.sql` in Query SQL window
 
-     ------**make sure to use MySQL v8**
+     **make sure to use Database: MySQL v8 version in https://www.db-fiddle.com/**
      
 > **Stack:** MySQL 8 • Schema: `sql/schema.sql` • Data: `sql/sample-data.sql`
 >
