@@ -4,9 +4,9 @@
 - **Run instantly on DB Fiddle (MySQL) (https://www.db-fiddle.com/):**
   1. Paste `sql/schema.sql` in Schema SQL window
   2. Paste `sql/sample-data.sql` in Schema SQL window
-  3. Run queries from `sql/practice-queries.sql` in Query SQL window
+  3. Run below day wise queries in Query SQL window
 
-     **make sure to use Database: MySQL v8 version in https://www.db-fiddle.com/**
+     **Make sure to use Database: MySQL v8 version in https://www.db-fiddle.com/**
      
 > **Stack:** MySQL 8 • Schema: `sql/schema.sql` • Data: `sql/sample-data.sql`
 >
