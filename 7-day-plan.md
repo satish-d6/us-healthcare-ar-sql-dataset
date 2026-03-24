@@ -67,7 +67,7 @@ WHERE submission_date >= (CURDATE() - INTERVAL 120 DAY)
 ORDER BY claim_amount DESC
 LIMIT 5;
 
-✅ Day 2 — Join Fundamentals (Context Building)
+## ✅ Day 2 — Join Fundamentals (Context Building)
 Goal (2 hrs): Learn JOIN patterns to enrich claim context.
 
 ### Warm-up
