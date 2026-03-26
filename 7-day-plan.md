@@ -226,8 +226,8 @@ Goal (2 hrs): Use CTEs and CASE to create intermediate tables & KPIs.
 -- CASE-based payer category
 SELECT payer_name,
        CASE plan_type
-         WHEN 'Medicare' THEN 'Gov't'
-         WHEN 'Medicaid' THEN 'Gov't'
+         WHEN 'Medicare' THEN 'Govt'
+         WHEN 'Medicaid' THEN 'Govt'
          ELSE 'Commercial'
        END AS payer_category
 FROM payers
