@@ -326,16 +326,19 @@ ORDER BY days_to_first_pay;
 ### Stretch
 -- Top 10 open-balance claims with payer, rank by balance
 WITH bal AS (
-  SELECT c.claim_id, c.payer_id,
-         c.claim_amount - IFNULL(SUM(p.paid_amount),0) - IFNULL(SUM(p.adjustment_amount),0) AS balance
-  FROM claims c LEFT JOIN payments p ON p.claim_id = c.claim_id
+  SELECT c.claim_id, c.payer_id, c.claim_amount - IFNULL(SUM(p.paid_amount), 0) - IFNULL(SUM(p.adjustment_amount), 0) AS balance
+  FROM claims c
+  LEFT JOIN payments p ON p.claim_id = c.claim_id
   GROUP BY c.claim_id, c.payer_id, c.claim_amount
 )
-SELECT b.claim_id, py.payer_name, b.balance,
-       DENSE_RANK() OVER (ORDER BY b.balance DESC) AS balance_rank
-FROM bal b JOIN payers py ON py.payer_id = b.payer_id
-WHERE b.balance > 0
-QUALIFY balance_rank <= 10; -- If QUALIFY unsupported in your MySQL environment, wrap as subquery
+SELECT *
+FROM (
+    SELECT b.claim_id, py.payer_name, b.balance, DENSE_RANK() OVER (ORDER BY b.balance DESC) AS balance_rank
+    FROM bal b
+    JOIN payers py ON py.payer_id = b.payer_id
+    WHERE b.balance > 0
+) ranked
+WHERE ranked.balance_rank <= 10;
 
 ✅ Day 7 — Portfolio Reports (Save & Commit)
 Goal (2 hrs): Build 3 “portfolio-grade” queries and commit.
